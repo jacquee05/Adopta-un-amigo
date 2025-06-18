@@ -1,0 +1,482 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ecca86;
+  color: #000000;
+}
+.hero {
+  background-image: url('https://img.freepik.com/vector-gratis/vector-diseno-fondo-patron-impresion-pata-animal-salvaje-divertido_1017-47618.jpg?semt=ais_hybrid&w=740'); /* Usá tu URL real */
+  background-size: cover;       /* Ajusta la imagen al ancho/alto */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;
+  padding: 10px 20px;          /* Espaciado interno */
+  color: rgb(0, 0, 0);                 /* Para que el texto sea visible */
+  text-align: center;
+}
+.hero .overlay {
+  background-color: rgba(255, 255, 255, 0.5); /* Oscurece la imagen */
+  padding: 100px 20px;
+}
+/* Secciones */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Estadísticas */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #ff6f3c;
+}
+
+.stat p {
+  margin:0;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.animal-card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border:1px solid #554747;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgb(72, 69, 69);
+}
+
+.animal-card img{
+ width: 100%;
+  height: auto;
+  display: block;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: #b3a0ad;
+  padding: 10px 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ← separa logo y enlaces */
+ background-color: #717171;
+  padding: 10px 100px;
+}
+
+.navbar-logo img {
+  width: 90px; /* tamaño del logo */
+  height: auto;
+}
+
+.navbar a, .dropbtn {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+ background-color: #0f2c6b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(252, 252, 252, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fffbfb;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+ background-color: #6e90d8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.animal-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.animal-card {
+  background-color: #6e90d8;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100px;
+  box-shadow: 0 2px 6px rgb(255, 255, 255);
+  text-align: center;
+}
+
+.animal-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
+.heart {
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.heart.liked {
+  color: rgb(133, 0, 0);
+}
+
+.animal-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #5f5858;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.animal-card button:hover {
+  background: #ffffff;
+}
+.formulario {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #6e90d8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  text-align: center;
+}
+
+.animal-destacado {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(23, 72, 100);
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-spacing: 10px;
+}
+
+td {
+  vertical-align: top;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+}
+
+.cuestionario li {
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  margin: 20px auto;
+  display: block;
+  background-color: #5774b1;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #606060;
+}
+
+#mensaje-confirmacion {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #047490;
+}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f7f7f7;
+  }
+
+  h2 {
+    margin-top: 1.5rem;
+  }
+
+  button {
+    padding: 10px 15px;
+ background-color: #0f2c6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:disabled {
+    background: #a19999;
+    cursor: not-allowed;
+  }
+.video-container {
+  position: relative;
+  width: 60%;           /* ancho del video (puedes ajustar %) */
+  max-width: 700px;     /* máximo ancho para que no sea gigante */
+  margin: 20px auto;    /* margen arriba y abajo, auto para centrar horizontalmente */
+  padding-bottom: 25.5%; /* altura relativa para 16:9 */
+  height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 8px; /* opcional: bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* sombra suave opcional */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px; /* para que coincida con el contenedor */
+}
+.nosotros{
+  background-image: url('https://img.freepik.com/vector-gratis/vector-diseno-fondo-patron-impresion-pata-animal-salvaje-divertido_1017-47618.jpg?semt=ais_hybrid&w=740'); /* Usá tu URL real */
+  background-size: cover;       /* Ajusta la imagen al ancho/alto */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;
+  padding: 10px 20px;          /* Espaciado interno */
+  color: rgb(0, 0, 0);                 /* Para que el texto sea visible */
+  text-align: center;
+}
+.cuidado{
+ background-image: url('https://img.freepik.com/vector-gratis/vector-diseno-fondo-patron-impresion-pata-animal-salvaje-divertido_1017-47618.jpg?semt=ais_hybrid&w=740'); /* Usá tu URL real */
+  background-size: cover;       /* Ajusta la imagen al ancho/alto */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;
+  padding: 10px 20px;          /* Espaciado interno */
+  color: rgb(0, 0, 0);                 /* Para que el texto sea visible */
+  text-align: center;
+}
+.footer {
+  background-color: #37387e;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-section form input[type="email"] {
+  padding: 8px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer-section form button {
+  padding: 8px 12px;
+  background-color: #0f2c6b;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer-section form button:hover {
+  background-color: #0f2c6b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.mini-galeria {
+  text-align: center;
+  padding: 40px 20px;
+}
+.slider {
+  width: 100%;
+  max-width: 600px;
+  height:300px;
+  overflow: hidden;
+  margin: 40px auto;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.slider-inner {
+  display: flex;
+  width: 800%; /* 6 imágenes */
+  animation: slide-loop 30s linear infinite;
+}
+
+.slider-inner img {
+  width: calc(100% / 8); /* 6 imágenes */
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  background-color: transparent;
+  padding: 0;
+}
+
+@keyframes slide-loop {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.Acepta h2{
+    text-align: center;
+}
+p{
+   text-align: center;
+}
+.val{
+  background-image: url('https://img.freepik.com/vector-gratis/vector-diseno-fondo-patron-impresion-pata-animal-salvaje-divertido_1017-47618.jpg?semt=ais_hybrid&w=740'); /* Usá tu URL real */
+  background-size: cover;       /* Ajusta la imagen al ancho/alto */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;
+  padding: 10px 20px;          /* Espaciado interno */
+  color: rgb(0, 0, 0);                 /* Para que el texto sea visible */
+  text-align: center;
+}
+.donaciones{
+   background-image: url('https://img.freepik.com/vector-gratis/vector-diseno-fondo-patron-impresion-pata-animal-salvaje-divertido_1017-47618.jpg?semt=ais_hybrid&w=740'); /* Usá tu URL real */
+  background-size: cover;       /* Ajusta la imagen al ancho/alto */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;
+  padding: 10px 20px;          /* Espaciado interno */
+  color: rgb(0, 0, 0);                 /* Para que el texto sea visible */
+  text-align: center;
+}
+.seccion-columnas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.columna {
+  width: 280px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columna img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+

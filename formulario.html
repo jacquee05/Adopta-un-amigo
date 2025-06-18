@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Adopción</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="formulario">
+    <h2>Formulario de Adopción</h2>
+    <p id="animal-name" class="animal-destacado"></p>
+
+    <!-- Datos personales -->
+    <form id="adopcion-form">
+      <table>
+        <tr>
+          <td><label for="nombre">Nombre:</label></td>
+          <td><input type="text" id="nombre" name="nombre" required></td>
+        </tr>
+        <tr>
+          <td><label for="apellido">Apellido:</label></td>
+          <td><input type="text" id="apellido" name="apellido" required></td>
+        </tr>
+        <tr>
+          <td><label for="edad">Edad:</label></td>
+          <td><input type="number" id="edad" name="edad" min="18" required></td>
+        </tr>
+        <tr>
+          <td><label for="ocupacion">Ocupación:</label></td>
+          <td><input type="text" id="ocupacion" name="ocupacion" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="direccion">Dirección:</label></td>
+          <td><input type="text" id="direccion" name="direccion" required></td>
+        </tr>
+        <tr>
+          <td><label for="codigo-postal">Código Postal:</label></td>
+          <td><input type="text" id="codigo-postal" name="codigo-postal" required></td>
+        </tr>
+        <tr>
+          <td><label for="telefono-celular">Tel. Celular:</label></td>
+          <td><input type="tel" id="telefono-celular" name="telefono-celular" required></td>
+        </tr>
+        <tr>
+          <td><label for="telefono-casa">Tel. Casa:</label></td>
+          <td><input type="tel" id="telefono-casa" name="telefono-casa"></td>
+        </tr>
+        <tr>
+          <td><label for="trabajo">Lugar de trabajo:</label></td>
+          <td><input type="text" id="trabajo" name="trabajo"></td>
+        </tr>
+      </table>
+
+      <!-- Cuestionario -->
+      <h3>Cuestionario</h3>
+      <ol class="cuestionario">
+        <li><label>¿Tienes otras mascotas? <input type="text" name="q1" required></label></li>
+        <li><label>¿Dónde vivirá el animal? (interior, exterior, mixto): <input type="text" name="q2" required></label></li>
+        <li><label>¿Vives en casa propia o alquilada? <input type="text" name="q3" required></label></li>
+        <li><label>¿Hay niños en casa? ¿De qué edades? <input type="text" name="q4" required></label></li>
+        <li><label>¿Cuántas horas estará solo al día? <input type="text" name="q5" required></label></li>
+        <li><label>¿Qué harías si el animal enferma? <input type="text" name="q6" required></label></li>
+        <li><label>¿Estás dispuesto a seguir un proceso de adaptación? <input type="text" name="q7" required></label></li>
+        <li><label>¿Cuentas con medios para cubrir gastos veterinarios? <input type="text" name="q8" required></label></li>
+        <li><label>¿Has tenido experiencias anteriores con adopciones? <input type="text" name="q9" required></label></li>
+        <li><label>¿Qué harías si cambias de casa o ciudad? <input type="text" name="q10" required></label></li>
+        <li><label>¿Algo más que quieras contarnos? <textarea name="q11" rows="2" required></textarea></label></li>
+      </ol>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+
+    <div id="mensaje-confirmacion" style="display: none;">
+      ✅ ¡Gracias por tu solicitud! Nos contactaremos contigo pronto.
+    </div>
+
+    <a href="adopcion.html" class="volver">← Volver a los animales</a>
+  </section>
+ <script src="script.js"></script>
+</body>
+</html>
+
